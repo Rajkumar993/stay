@@ -1,0 +1,417 @@
+.cart-container {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.cart-title-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-top: 0;
+}
+
+.cart-title {
+    font-size: 2.325rem;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    justify-content: center;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.empty-cart-container {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-top: 14px;
+}
+
+.empty-cart-para {
+    font-size: 1.45rem;
+    font-weight: 200;
+}
+
+.continue-button {
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.continue-button:hover {
+    opacity: 0.75;
+    transform: scale(1.05);
+    color: white;
+}
+
+.continue-button:active {
+    transform: scale(0.95);
+}
+
+.cart-item-container {
+    display: flex;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    position: relative;
+    /* gap: 0.75rem; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.cart-item-image {
+    width: 20%;
+    border-radius: 5px;
+    height: 130px
+}
+
+@media(max-width:450px) {
+    .cart-item-image {
+        width: 70%;
+        border-radius: 5px;
+        height: 130px
+    }
+}
+
+.cart-item-details {
+    width: 78%;
+    display: flex;
+    margin-left: 2%;
+    flex-direction: column;
+}
+
+.item-subname {
+    font-size: 0.875rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0;
+    margin-top: 16%;
+}
+
+.cart-item-price {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.item-amount {
+    font-size: 0.875rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.item-discount-amount {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-left: 3%;
+}
+
+.item-quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.25rem;
+
+}
+
+
+.card-item-delete {
+    font-size: 20px;
+}
+
+.card-item-delete:hover {
+    color: #000;
+    /* Equivalent to hover:text-black */
+}
+
+.cart-item-options {
+    appearance: none;
+    border: none;
+    /* Equivalent to border-none */
+    cursor: pointer;
+    width: 93%;
+    background-color: rgba(0, 0, 0, 0.05);
+    /* Equivalent to bg-black/[0.05] */
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+    padding: 0.7rem 1.75rem;
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e);
+}
+
+.cart-item-options:hover {
+    color: #000;
+}
+
+.item-calculation-cantiner {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+}
+
+.item-subtotal-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-subtotal-amount1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.item-total-amount {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    ;
+}
+
+.item-total-para {
+    font-size: 1rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-top: 0.5rem;
+    line-height: 1.55rem;
+}
+
+
+.coupon-text {
+    border-color: gray;
+    background-color: #f9fafb;
+    border-width: 1px;
+    border-style: solid;
+    width: 13rem;
+    height: 3.5rem;
+    color: #111827;
+    font-size: 1.0rem;
+    border-radius: 0.5rem;
+    padding: 0.625rem;
+
+}
+
+.coupon-text:focus {
+    outline: 1px solid #000;
+}
+
+.apply-button {
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #f9fafb;
+    border-color: #000;
+    font-size: 1.06rem;
+    transition-property: transform;
+    transform: scale(0.95);
+    font-weight: 400;
+    text-transform: uppercase;
+    gap: 0.5rem;
+}
+
+.apply-button:hover {
+    opacity: 0.75;
+}
+
+
+.checkout-button1 {
+    width: 50%;
+    /* Equivalent to w-full */
+    padding-top: 1rem;
+    /* Equivalent to py-4 */
+    padding-bottom: 1rem;
+    /* Equivalent to py-4 */
+    border-radius: 9999px;
+    /* Equivalent to rounded-full for a large value to create a circle */
+    background-color: #000;
+    /* Equivalent to bg-black */
+    color: #fff;
+    /* Equivalent to text-white */
+    font-size: 1.125rem;
+    /* Equivalent to text-lg */
+    font-weight: 500;
+    /* Equivalent to font-medium */
+    transition-property: transform;
+    /* Equivalent to transition-transform */
+    align-items: center;
+    padding: 2%;
+}
+.checkout-button12{
+    width: 30%;
+    /* Equivalent to w-full */
+    padding-top: 1rem;
+    /* Equivalent to py-4 */
+    padding-bottom: 1rem;
+    /* Equivalent to py-4 */
+    border-radius: 9999px;
+    /* Equivalent to rounded-full for a large value to create a circle */
+    background-color: #000;
+    /* Equivalent to bg-black */
+    color: #fff;
+    /* Equivalent to text-white */
+    font-size: 1.125rem;
+    /* Equivalent to text-lg */
+    font-weight: 500;
+    /* Equivalent to font-medium */
+    transition-property: transform;
+    /* Equivalent to transition-transform */
+    align-items: center;
+    padding: 2%;
+}
+.checkout-button {
+    width: 100%;
+    /* Equivalent to w-full */
+    padding-top: 1rem;
+    /* Equivalent to py-4 */
+    padding-bottom: 1rem;
+    /* Equivalent to py-4 */
+    border-radius: 9999px;
+    /* Equivalent to rounded-full for a large value to create a circle */
+    background-color: #000;
+    /* Equivalent to bg-black */
+    color: #fff;
+    /* Equivalent to text-white */
+    font-size: 1.125rem;
+    /* Equivalent to text-lg */
+    font-weight: 500;
+    /* Equivalent to font-medium */
+    transition-property: transform;
+    /* Equivalent to transition-transform */
+    align-items: center;
+    padding: 5%;
+    padding-left: 32%;
+    padding-right: 34%;
+    cursor: pointer;
+}
+
+.cart-item-name {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 90%;
+    text-overflow: ellipsis;
+    /* border: 1px solid;
+    width: 200px; */
+}
+
+.card-item-container {
+    width: 60%;
+}
+
+.checkout-button :hover {
+    color: red;
+    opacity: 0.75;
+    /* Equivalent to hover:opacity-75 */
+}
+
+.checkout-button:active {
+    transform: scale(0.95);
+    /* Equivalent to active:scale-95 */
+}
+
+
+@media (max-width:1022px) {
+    .card-item-container {
+        width: 100%;
+    }
+
+    .cart-item-details {
+        width: 75%;
+    }
+
+    .cart-item-image {
+        width: 24%;
+    }
+
+    .cart-content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        justify-content: center;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    width: 50%;
+    height: 50%;
+}
+
+.customer-number {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-row-gap: 9%;
+    margin-bottom: 15%
+}
+
+
+@media (max-width: 658px) {
+    .customer-number {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-row-gap: 9%;
+    }
+}
+
+.address-save {
+    width: 30%;
+    height: 100%;
+    border: 1px solid;
+}
+
+.add-customer-address {
+    left: 100%
+}
+
+@media (max-width: 1050px) {
+    .add-customer-address {
+        left: 80%
+    }
+
+}
+
+@media (max-width: 533px) {
+    .cart-item-image {
+        width: 33%;
+    }
+
+    .cart-item-details {
+        width: 65%;
+    }
+
+}
+

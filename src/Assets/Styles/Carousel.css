@@ -1,0 +1,280 @@
+.image-container {
+  width: 100%;
+  height: 85%;
+}
+
+/* Previous arrow */
+.carousel-arrow-prev {
+  position: absolute;
+  right: 3.3%;
+  bottom: 0;
+  width: 3%;
+  height: 7%;
+  font-size: 24px;
+  color: aliceblue;
+  background-color: black;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.carousel-arrow-prev:hover {
+  opacity: 0.9;
+}
+
+.carousel-arrow-prev i {
+  font-size: 14px;
+  /* You can adjust the font size to match text-sm or md:text-lg */
+}
+
+/* Next arrow */
+.carousel-arrow-next {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 3%;
+  height: 7%;
+  color: aliceblue;
+  font-size: 24px;
+  background-color: black;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: rotate(180deg);
+}
+
+.carousel-arrow-next:hover {
+  opacity: 0.9;
+}
+
+.carousel-arrow-next i {
+  font-size: 14px;
+  /* You can adjust the font size to match text-sm or md:text-lg */
+}
+
+/* MyComponent.css */
+.container {
+  position: absolute;
+  margin-left: 5%;
+  bottom: 10%;
+  width: 90%;
+  text-align: left;
+  padding: 2%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    left: 20px;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+}
+
+@media (min-width: 768px) {
+  .text-container {
+    gap: 1px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subTitle {
+    font-size: 1.125rem;
+  }
+}
+
+.subTitle {
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+/* YourComponent.css */
+
+/* Absolute black background with animation */
+.absolute-bg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: all 0.4s ease;
+  background-color: black;
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Absolute right-aligned container */
+.absolute-right {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 2.5rem;
+  /* Adjust width as needed */
+  height: 2.5rem;
+  /* Adjust height as needed */
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+}
+
+/* SVG icon styles */
+.svg-icon {
+  width: 5px;
+  height: 5px;
+  stroke: currentColor;
+}
+
+/* Button text */
+.button-text {
+  position: relative;
+  font-size: 1.25rem;
+}
+
+/* Hover effect */
+.group:hover .absolute-bg {
+  height: 100%;
+  top: 0;
+}
+
+.group:hover .absolute-right {
+  transform: translateX(0);
+}
+
+
+.button-container {
+  position: relative;
+  width: 12rem;
+  height: 4rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: black;
+  border: 2px solid black;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.button-container:hover {
+  color: white;
+  background-color: black;
+}
+
+
+.svg-icon {
+  width: 1.25rem;
+  /* Adjust width as needed */
+  height: 1.25rem;
+  /* Adjust height as needed */
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+.button-text {
+  margin-left: 0.5rem;
+}
+
+
+/* CSS for the button */
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  /* Adjust padding as needed */
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+@media (max-width: 520px) {
+  .carousel.carousel-slider {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .container {
+    position: absolute;
+    margin-left: 5%;
+    top: 20%;
+    width: 90%;
+    text-align: left;
+    padding: 2%;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 65%;
+  }
+
+  .text-container {
+    gap: 5px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .subTitle {
+    font-size: 1rem;
+  }
+}
+
+.image-size {
+  object-fit:contain;
+  height: 100%;
+}
+
+#carousel-container {
+  height: 80vh;
+}
+/* #carousel-image-container {
+  height: 100%;
+} */
+
+@media (max-width: 800px) {
+  #carousel-container {
+    height: 37vh;
+  }
+  /* #carousel-image-container {
+    height: 37vh;
+  } */
+  .image-size{
+    object-fit:contain;
+    height: 100%;
+  }
+  .image-container {
+    width: 100%;
+    height: 38%;
+  }
+}

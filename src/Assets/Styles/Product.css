@@ -1,0 +1,539 @@
+.product-container {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+
+#product-image {
+    object-fit: fill;
+    height: 80%;
+}
+
+.product-container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    padding-left: 2%;
+    /* Equivalent to gap-[50px] */
+}
+
+@media (min-width: 768px) {
+    .product-container1 {
+        padding-left: 10px;
+        /* Equivalent to md:px-10 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-container1 {
+        flex-direction: row;
+        /* Equivalent to lg:flex-row */
+        gap: 6.5%;
+        /* Equivalent to lg:gap-[100px] */
+    }
+}
+
+.left-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* height: 90vh; */
+    max-width: 100%;
+    flex-grow: 1.5;
+}
+
+.mobile-carousel {
+    height: 42rem;
+}
+
+@media(max-width:768px) {
+    .mobile-carousel {
+        height: 37rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .left-container {
+        /* height: 52vh; */
+        width: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .left-container {
+        margin-left: 0;
+        max-width: 60%;
+    }
+}
+
+.carouusel-image {
+    
+}
+
+.productCarousel.carousel-root {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.productCarousel.carousel-root .carousel {
+    width: auto;
+}
+
+.productCarousel.carousel-root .carousel.carousel-slider {
+    width: 100%;
+}
+
+.productCarousel.carousel-root .carousel.carousel-slider .slider-wrapper {
+    border-radius: 10px;
+    height: 100%;
+    
+}
+
+.productCarousel.carousel-root .carousel .thumbs-wrapper {
+    margin: 0;
+}
+
+.productCarousel.carousel-root .carousel .thumb {
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    background-color: #00A86B;
+}
+
+.productCarousel.carousel-root .carousel .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: antiquewhite;
+}
+
+.productCarousel.carousel-root .carousel .thumb:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+}
+
+.productCarousel.carousel-root .carousel .thumb.selected,
+.productCarousel.carousel-root .carousel .thumb:hover {
+    border: 0;
+    background-color: #00A86B;
+}
+
+.productCarousel.carousel-root .carousel .thumb:hover:after,
+.productCarousel.carousel-root .carousel .thumb.selected:after {
+    opacity: 0.2;
+    background-color:aquamarine;
+}
+
+.productCarousel .control-arrow {
+    height: 100%;
+   opacity: 0px;
+}
+
+@media screen and (max-width: 767px) {
+    .productCarousel.carousel-root {
+        flex-direction: column;
+    }
+
+    .productCarousel.carousel-root .carousel .thumb {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .productCarousel.carousel-root .carousel .thumbs {
+        transform: none !important;
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+    }
+
+    .productCarousel.carousel-root .carousel .thumb {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+.right-container {
+    flex: 1;
+    padding-top: 0rem;
+    text-align: start;
+}
+
+.right-container h2 {
+    margin-bottom: 0.1rem;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.sub-name {
+    margin-bottom: 0.95rem;
+    font-size: 1.325rem;
+    font-weight: 300;
+}
+
+/* Your CSS file */
+.brand-name {
+    margin-bottom: 0.95rem;
+    font-size: 1.325rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brand-name h6 {
+    font-size: 1.325rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.price-details-container {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.product-dicount {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: line-through;
+}
+
+.product-offer {
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #00cc66;
+}
+
+
+.product-autocart {
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    width: 100%;
+    border-radius: 9999px;
+    background-color: #000;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.product-autocart:hover {
+    opacity: 0.75;
+    transform: scale(0.95);
+}
+
+.product-discription {
+    /* border-top: 1px solid #000; */
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+.product-rating{
+background-color :rgb(56, 142, 60);
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+border-bottom-left-radius :3px;
+border-bottom-right-radius :3px;
+border-top-left-radius :3px;
+border-top-right-radius :3px;
+box-sizing :border-box;
+color :rgb(255, 255, 255);
+cursor :pointer;
+display :inline-block;
+font-family: Roboto, Arial, sans-serif;
+font-size :12px;
+font-weight : 500;
+height :23px;
+letter-spacing :normal;
+line-height :normal;
+margin-bottom :0px;
+margin-left :0px;
+margin-right :0px;
+margin-top :0px;
+padding-bottom :2px;
+padding-left :6px;
+padding-right :6px;
+padding-top :2px;
+unicode-bidi :isolate;
+vertical-align :middle;
+width :45px;
+}
+.myDiv h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo-container {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.popup {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #707070;
+    transition: opacity 0.2s;
+}
+
+.popup:hover {
+    opacity: 0.75;
+}
+
+.product-icon {
+    color: #707070;
+}
+
+.product-icon.group:hover {
+    opacity: 0.75;
+}
+
+
+.product-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+
+.related-product-container {
+    margin-top: 3.125rem;
+    margin-bottom: 6.25rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    text-align: start;
+}
+
+@media (min-width: 768px) {
+    .related-product-container {
+        margin-top: 6.25rem;
+        margin-bottom: 0;
+    }
+}
+
+.re-headting {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    text-transform: capitalize;
+}
+
+
+.myCarouselContainer {
+    margin-left: -10px;
+    /* Equivalent to -mx-[10px] */
+    margin-right: -10px;
+    /* Equivalent to -mx-[10px] */
+    width: 100%;
+    /* Equivalent to w-full */
+}
+
+.myCarouselItem {
+    padding-left: 10px;
+    /* Equivalent to px-[10px] */
+    padding-right: 10px;
+    /* Equivalent to px-[10px] */
+}
+
+
+.related-prodcut-list {
+    position: relative;
+    /* Equivalent to relative */
+    transition: transform 0.2s;
+    /* Equivalent to transform duration-200 */
+    padding-left: 8%;
+    width: 100%;
+    /* height: 60%; */
+}
+
+.related-prodcut-list:hover {
+    transform: scale(1.05);
+    /* Equivalent to hover:scale-105 */
+}
+
+
+/* Your CSS file */
+.related-product-details {
+    padding-top: 1rem;
+    /* Equivalent to py-4 */
+    padding-bottom: 1rem;
+    /* Equivalent to py-4 */
+    color: rgba(0, 0, 0, 0.9);
+    /* Equivalent to text-black/[0.9] */
+}
+
+.related-product-heading {
+    font-size: 0.75rem;
+    /* Equivalent to text-xs */
+    font-weight: 500;
+    width: 12rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Equivalent to font-medium */
+}
+
+@media (min-width: 640px) {
+    .related-product-heading {
+        font-size: 1.475rem;
+        /* Equivalent to sm:text-sm */
+    }
+}
+
+.product-price-container {
+    display: flex;
+    /* Equivalent to flex */
+    align-items: center;
+    /* Equivalent to items-center */
+    color: rgba(0, 0, 0, 0.5);
+    /* Equivalent to text-black/[0.5] */
+}
+
+.related-product-price {
+    margin-right: 0.5rem;
+    /* Equivalent to mr-2 */
+    font-size: 0.875rem;
+    /* Equivalent to text-sm */
+    font-weight: 600;
+    /* Equivalent to font-semibold */
+}
+
+
+
+.product-discount-price {
+    font-size: 0.5rem;
+    /* Equivalent to text-xs */
+    font-weight: 500;
+    /* Equivalent to font-medium */
+    text-decoration: line-through;
+    /* Equivalent to line-through */
+}
+
+.product-offer-price {
+    margin-left: auto;
+    /* Equivalent to ml-auto */
+    font-size: 0.75rem;
+    /* Equivalent to text-xs */
+    font-weight: 500;
+    /* Equivalent to font-medium */
+    color: #00A86B;
+    /* Equivalent to text-green-500 */
+}
+
+
+@media (min-width: 768px) {
+    .related-product-price {
+        font-size: 1.225rem;
+        /* Equivalent to md:text-lg */
+    }
+
+    .related-product-heading {
+        font-size: 1.425rem;
+        /* Equivalent to md:text-lg */
+    }
+
+    .product-discount-price {
+        font-size: 1.1rem;
+        /* Equivalent to md:text-base */
+    }
+
+    .product-offer-price {
+        font-size: 1.2rem;
+        /* Equivalent to md:text-base */
+    }
+}
+
+
+/* Your CSS file */
+.related-product-cart {
+    position: absolute;
+    bottom: 8.25rem;
+    /* Adjust the distance from the bottom as needed */
+    right: 0.5rem;
+    /* Adjust the distance from the right as needed */
+    display: none;
+    z-index: 100;
+    border: none;
+    transform: translate(0, 0);
+    cursor: pointer;
+    /* Adjust padding as needed */
+    background: rgba(255, 255, 255, 0.7);
+    /* Adjust background color and opacity as needed */
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.6);
+    /* Adjust text color and opacity as needed */
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.related-product-cart:hover {
+    display: block;
+    transform: scale(1.05);
+    color: rgba(0, 0, 0, 1);
+}
+
+@media (min-width: 640px) {
+    .related-product-cart {
+        display: block;
+        /* Equivalent to sm:block */
+        bottom: 25%;
+        /* Equivalent to md:bottom-28 */
+        right: 0.5rem;
+        /* Equivalent to md:right-4 */
+    }
+}
+
+@media(max-width:640px) {
+    .related-product-heading {
+        font-weight: 600;
+    }
+}
+
+@media(max-width:768px) {
+    .carousel .thumbs-wrapper {
+        margin: 20px;
+        /* overflow: auto; */
+        overflow-x: auto;
+        white-space: nowrap;
+        overflow-y: hidden;
+    }
+
+    .carousel .thumbs-wrapper::-webkit-scrollbar {
+        display: none;
+        /* Hide the scrollbar */
+    }
+}
+
+.under-headding {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 3%;
+    margin-bottom: 2%;
+    width: 37%;
+    background-color: #d669d4;
+}
+
+/* #b431b2 */
+/* #d669d4 */

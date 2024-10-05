@@ -1,0 +1,229 @@
+/* styles.css */
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  /* max-width: 7xl; */
+  /* padding: 1.5rem 0.5rem 1rem 0.5rem; */
+  width: 100%;
+}
+
+.footer-container1 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+.footer-logo {
+  display: flex;
+  margin-left: -0.75rem;
+}
+
+.logo-text {
+  width: 25%;
+  height: 10%;
+}
+
+.logo-image {
+  width: 10%;
+  height: 5%;
+  padding-bottom: 2%;
+}
+
+.footer-para {
+  font-size: 1.08rem;
+  line-height: 1.5;
+  color: #718096;
+  text-align: justify;
+  width: 100%;
+}
+
+.footer-container {
+  padding-left: 4.5rem;
+  
+  /* Adjust the padding-left as needed */
+  padding-right: 4.5rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+.footer-category-container {
+  padding-top: 2.5rem; 
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+.footer-container-heading {
+  font-size: 1.03rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #111827;
+}
+
+.footer-category-list {
+  font-size: 1.0rem;
+  /* text-sm */
+  line-height: 1.5;
+  /* leading-6 */
+  color: #4B5563;
+}
+
+.footer-category-list:hover {
+  color: #4A90E2;
+  /* hover:text-gray-900 */
+  text-transform: capitalize;
+  /* capitalize */
+}
+.links{
+  display: block;
+}
+.li{
+  display: "";
+}
+.social{
+
+  display: flex;
+  gap:2rem;
+  margin-top: 2%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:380px){
+  .footer-container{
+    padding-left: 1rem;
+  
+    /* Adjust the padding-left as needed */
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
+  .footer-category-container {
+    padding-top: 2.5rem; 
+   padding-bottom: 0px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+  }
+  .footer-container-heading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+    line-height: 0;
+    margin-bottom: 12px;
+    color: #111827;
+  }
+  .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .social{
+ width: 100%;
+    display: flex;
+    gap:2rem;
+    margin-top: 2%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-update-container {
+    margin-top: 1.5rem;
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    border-color: rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  /* Adjust the breakpoint as needed */
+  .footer-category {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2%;
+  }
+}
+
+.footer-contact {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  padding-top: 2.5rem;
+}
+
+.footer-contact-text {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.contact-number {
+  display: block;
+  font-size: 1.0rem;
+  /* Equivalent to text-sm */
+  font-weight: 500;
+  /* Adjust font-weight as needed */
+  opacity: 0.75;
+  color: #111827;
+}
+
+.footer-update-container {
+  margin-top: 1.5rem;
+  border-top: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-color: rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+}
+
+.category-list {
+  list-style: none;
+  color: #111827;
+  margin-top: 27%;
+  padding: 0;
+}
+
+@media (max-width:893px) {
+  .footer-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .footer-container1 {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .category-list {
+    list-style: none;
+    color: #111827;
+    margin-top: 10%;
+    padding: 0;
+  }
+}
+
+/* In your CSS file, e.g., App.css */
+
+

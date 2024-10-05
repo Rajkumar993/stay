@@ -1,0 +1,14 @@
+.App {
+  height: 100vh;
+  width: auto;
+  width: 100%;
+  font-family:Urbanist,sans-serif;
+}
+
+@media (min-width: 912px) {
+  .mobile-navbar {
+      display: none;
+      width: 100%;
+  }
+
+}

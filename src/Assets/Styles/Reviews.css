@@ -1,0 +1,136 @@
+/* UserReview.css */
+
+.review-container {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .review-card {
+    display: flex;
+    
+    flex-direction: column;
+    max-width: fit-content;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space between cards */
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    max-width: 400px; /* Ensure the width does not exceed 300px */
+  }
+  
+  .review-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .edit-container{
+  padding-left: 87%;
+  }
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .review-profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .review-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .review-rating {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .review-message {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+    white-space: normal; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Display an ellipsis (...) to indicate text overflow */
+  }
+  
+  .edit-icon {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+  
+  .edit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .edit-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .edit-modal h2 {
+    margin-top: 0;
+  }
+  
+  .edit-modal textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .edit-modal .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-modal button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .product-autocart {
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    width: 100%;
+    border-radius: 9999px;
+    background-color: #000;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.2s, opacity 0.2s;
+}
